@@ -21,6 +21,7 @@
 		D09A603D20B6EC300049539B /* PrevisionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A603C20B6EC300049539B /* PrevisionCell.swift */; };
 		D09A603F20B6ED550049539B /* DonneeUniqueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A603E20B6ED550049539B /* DonneeUniqueCell.swift */; };
 		D09A604120B6F3920049539B /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A604020B6F3920049539B /* TableViewExtension.swift */; };
+		D09A604320B6F76D0049539B /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A604220B6F76D0049539B /* DateHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		D09A603C20B6EC300049539B /* PrevisionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrevisionCell.swift; sourceTree = "<group>"; };
 		D09A603E20B6ED550049539B /* DonneeUniqueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonneeUniqueCell.swift; sourceTree = "<group>"; };
 		D09A604020B6F3920049539B /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
+		D09A604220B6F76D0049539B /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		FFCA207BFD76798B82C3434D /* Pods-CodabeeMeteo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodabeeMeteo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodabeeMeteo/Pods-CodabeeMeteo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +133,7 @@
 				D09A603620B6DB480049539B /* Prevision.swift */,
 				D09A603820B6E7B00049539B /* Extensions.swift */,
 				D09A603A20B6E97F0049539B /* ImageDownloader.swift */,
+				D09A604220B6F76D0049539B /* DateHelper.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				D09A603D20B6EC300049539B /* PrevisionCell.swift in Sources */,
 				D0934D3420B6C8A3008318FC /* API.swift in Sources */,
 				D0934D2F20B6C5D6008318FC /* MeteoController.swift in Sources */,
+				D09A604320B6F76D0049539B /* DateHelper.swift in Sources */,
 				D09A604120B6F3920049539B /* TableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
