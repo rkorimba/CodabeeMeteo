@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import Alamofire
 
 class MeteoController: UIViewController {
 
@@ -27,7 +28,12 @@ class MeteoController: UIViewController {
         let uniteEtLangue = "&units=metric&lang=fr"
         let cleApi = "&APPID=" + API
         let urlString = urlDeBase + latitude + longitude + uniteEtLangue + cleApi
-        print(urlString)
+        guard let url = URL(string: urlString) else { return }
+        Alamofire.request(url).responseJSON { (response) in
+            if let reponse = response.value as? [String: AnyObject] {
+                print(reponse)
+            }
+        }
     }
     
 }

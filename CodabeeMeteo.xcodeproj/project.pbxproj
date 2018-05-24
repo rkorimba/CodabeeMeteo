@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA005AB652C812C176B2BAB2 /* Pods_CodabeeMeteo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EB9BE5B7C7479EE4F0C98BC /* Pods_CodabeeMeteo.framework */; };
 		D0934D1920B5939E008318FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0934D1820B5939E008318FC /* AppDelegate.swift */; };
 		D0934D1E20B5939E008318FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0934D1C20B5939E008318FC /* Main.storyboard */; };
 		D0934D2020B5939F008318FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0934D1F20B5939F008318FC /* Assets.xcassets */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EB9BE5B7C7479EE4F0C98BC /* Pods_CodabeeMeteo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodabeeMeteo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D537C27C778C816E682B42 /* Pods-CodabeeMeteo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodabeeMeteo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodabeeMeteo/Pods-CodabeeMeteo.debug.xcconfig"; sourceTree = "<group>"; };
 		D0934D1520B5939E008318FC /* CodabeeMeteo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodabeeMeteo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0934D1820B5939E008318FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0934D1D20B5939E008318FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		D0934D2E20B6C5D6008318FC /* MeteoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoController.swift; sourceTree = "<group>"; };
 		D0934D3020B6C6A6008318FC /* LocalisationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalisationExtension.swift; sourceTree = "<group>"; };
 		D0934D3320B6C8A3008318FC /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		FFCA207BFD76798B82C3434D /* Pods-CodabeeMeteo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodabeeMeteo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodabeeMeteo/Pods-CodabeeMeteo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA005AB652C812C176B2BAB2 /* Pods_CodabeeMeteo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AF9387869F9259FF97898CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EB9BE5B7C7479EE4F0C98BC /* Pods_CodabeeMeteo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB0825928AE573F297C0A770 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69D537C27C778C816E682B42 /* Pods-CodabeeMeteo.debug.xcconfig */,
+				FFCA207BFD76798B82C3434D /* Pods-CodabeeMeteo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D0934D0C20B5939E008318FC = {
 			isa = PBXGroup;
 			children = (
 				D0934D1720B5939E008318FC /* CodabeeMeteo */,
 				D0934D1620B5939E008318FC /* Products */,
+				AB0825928AE573F297C0A770 /* Pods */,
+				2AF9387869F9259FF97898CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0934D2720B5939F008318FC /* Build configuration list for PBXNativeTarget "CodabeeMeteo" */;
 			buildPhases = (
+				DD924A64EA32F158419119A9 /* [CP] Check Pods Manifest.lock */,
 				D0934D1120B5939E008318FC /* Sources */,
 				D0934D1220B5939E008318FC /* Frameworks */,
 				D0934D1320B5939E008318FC /* Resources */,
+				2FFBBA8D22EB18FD3B0ECDF5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,6 +201,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FFBBA8D22EB18FD3B0ECDF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CodabeeMeteo/Pods-CodabeeMeteo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodabeeMeteo/Pods-CodabeeMeteo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD924A64EA32F158419119A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodabeeMeteo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D0934D1120B5939E008318FC /* Sources */ = {
@@ -326,6 +391,7 @@
 		};
 		D0934D2820B5939F008318FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69D537C27C778C816E682B42 /* Pods-CodabeeMeteo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -344,6 +410,7 @@
 		};
 		D0934D2920B5939F008318FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFCA207BFD76798B82C3434D /* Pods-CodabeeMeteo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
