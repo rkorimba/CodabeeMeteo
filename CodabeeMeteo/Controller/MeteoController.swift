@@ -22,6 +22,7 @@ class MeteoController: UIViewController {
     
     var locationManager: CLLocationManager?
     var previsions = [Prevision]()
+    var previsionsJournalieres = [PrevisionJournaliere]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,6 +85,43 @@ class MeteoController: UIViewController {
             descTempsActuel.text = tempsActuel.desc
             ImageDownloader.obtenir.imageDepuis(tempsActuel.icone, imageView: iconeTempsActuel)
         }
+    }
+    
+    func obtenirPrevisionJournaliere() {
+        
+        var jour = ""
+        var icone = ""
+        var min = 0.0
+        var max = 0.0
+        var desc = ""
+        
+        for prevision in previsions {
+            if prevision.jour != "" {
+                if prevision.jour != jour {
+                    if jour != "" {
+                        let nouvelleJournee = PrevisionJournaliere(jour: jour, icone: icone, min: min, max: max, desc: desc)
+                        previsionsJournalieres.append(nouvelleJournee)
+                    }
+                    jour = prevision.jour
+                    icone = prevision.icone
+                    min = prevision.temperature
+                    max = prevision.temperature
+                    desc = prevision.desc
+                } else {
+                    if prevision.temperature > max {
+                        max = prevision.temperature
+                    }
+                    if prevision.temperature < min {
+                        min = prevision.temperature
+                    }
+                    if prevision.date.contains("12:") {
+                        icone = prevision.icone
+                        desc = prevision.desc
+                    }
+                }
+            }
+        }
+        self.tableView.reloadData()
     }
     
 }
