@@ -15,6 +15,7 @@
 		D0934D2F20B6C5D6008318FC /* MeteoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0934D2E20B6C5D6008318FC /* MeteoController.swift */; };
 		D0934D3120B6C6A6008318FC /* LocalisationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0934D3020B6C6A6008318FC /* LocalisationExtension.swift */; };
 		D0934D3420B6C8A3008318FC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0934D3320B6C8A3008318FC /* API.swift */; };
+		D09A603720B6DB480049539B /* Prevision.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A603620B6DB480049539B /* Prevision.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		D0934D2E20B6C5D6008318FC /* MeteoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoController.swift; sourceTree = "<group>"; };
 		D0934D3020B6C6A6008318FC /* LocalisationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalisationExtension.swift; sourceTree = "<group>"; };
 		D0934D3320B6C8A3008318FC /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		D09A603620B6DB480049539B /* Prevision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prevision.swift; sourceTree = "<group>"; };
 		FFCA207BFD76798B82C3434D /* Pods-CodabeeMeteo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodabeeMeteo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodabeeMeteo/Pods-CodabeeMeteo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 		D0934D2C20B6C579008318FC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D09A603620B6DB480049539B /* Prevision.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			files = (
 				D0934D3120B6C6A6008318FC /* LocalisationExtension.swift in Sources */,
 				D0934D1920B5939E008318FC /* AppDelegate.swift in Sources */,
+				D09A603720B6DB480049539B /* Prevision.swift in Sources */,
 				D0934D3420B6C8A3008318FC /* API.swift in Sources */,
 				D0934D2F20B6C5D6008318FC /* MeteoController.swift in Sources */,
 			);
