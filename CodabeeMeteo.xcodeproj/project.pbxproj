@@ -17,6 +17,7 @@
 		D0934D3420B6C8A3008318FC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0934D3320B6C8A3008318FC /* API.swift */; };
 		D09A603720B6DB480049539B /* Prevision.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A603620B6DB480049539B /* Prevision.swift */; };
 		D09A603920B6E7B00049539B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A603820B6E7B00049539B /* Extensions.swift */; };
+		D09A603B20B6E97F0049539B /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A603A20B6E97F0049539B /* ImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		D0934D3320B6C8A3008318FC /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		D09A603620B6DB480049539B /* Prevision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prevision.swift; sourceTree = "<group>"; };
 		D09A603820B6E7B00049539B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D09A603A20B6E97F0049539B /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		FFCA207BFD76798B82C3434D /* Pods-CodabeeMeteo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodabeeMeteo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodabeeMeteo/Pods-CodabeeMeteo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 			children = (
 				D09A603620B6DB480049539B /* Prevision.swift */,
 				D09A603820B6E7B00049539B /* Extensions.swift */,
+				D09A603A20B6E97F0049539B /* ImageDownloader.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			files = (
 				D0934D3120B6C6A6008318FC /* LocalisationExtension.swift in Sources */,
 				D09A603920B6E7B00049539B /* Extensions.swift in Sources */,
+				D09A603B20B6E97F0049539B /* ImageDownloader.swift in Sources */,
 				D0934D1920B5939E008318FC /* AppDelegate.swift in Sources */,
 				D09A603720B6DB480049539B /* Prevision.swift in Sources */,
 				D0934D3420B6C8A3008318FC /* API.swift in Sources */,

@@ -18,8 +18,6 @@ class MeteoController: UIViewController {
     @IBOutlet weak var descTempsActuel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    
-    
     var locationManager: CLLocationManager?
     var previsions = [Prevision]()
     
@@ -81,6 +79,7 @@ class MeteoController: UIViewController {
             let tempsActuel = previsions[0]
             temperatureLabel.text = tempsActuel.temperature.convertirEnIntString()
             descTempsActuel.text = tempsActuel.desc
+            ImageDownloader.obtenir.imageDepuis(tempsActuel.icone, imageView: iconeTempsActuel)
         }
     }
     
