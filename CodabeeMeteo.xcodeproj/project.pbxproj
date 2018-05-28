@@ -23,6 +23,7 @@
 		D09A604120B6F3920049539B /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A604020B6F3920049539B /* TableViewExtension.swift */; };
 		D09A604320B6F76D0049539B /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A604220B6F76D0049539B /* DateHelper.swift */; };
 		D09A604520B6FBCF0049539B /* PrevisionJournaliere.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A604420B6FBCF0049539B /* PrevisionJournaliere.swift */; };
+		D09A604720B7001F0049539B /* JourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09A604620B7001F0049539B /* JourCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		D09A604020B6F3920049539B /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
 		D09A604220B6F76D0049539B /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		D09A604420B6FBCF0049539B /* PrevisionJournaliere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrevisionJournaliere.swift; sourceTree = "<group>"; };
+		D09A604620B7001F0049539B /* JourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourCell.swift; sourceTree = "<group>"; };
 		FFCA207BFD76798B82C3434D /* Pods-CodabeeMeteo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodabeeMeteo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodabeeMeteo/Pods-CodabeeMeteo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +127,7 @@
 			children = (
 				D09A603C20B6EC300049539B /* PrevisionCell.swift */,
 				D09A603E20B6ED550049539B /* DonneeUniqueCell.swift */,
+				D09A604620B7001F0049539B /* JourCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				D09A603F20B6ED550049539B /* DonneeUniqueCell.swift in Sources */,
 				D09A603920B6E7B00049539B /* Extensions.swift in Sources */,
 				D09A603B20B6E97F0049539B /* ImageDownloader.swift in Sources */,
+				D09A604720B7001F0049539B /* JourCell.swift in Sources */,
 				D09A604520B6FBCF0049539B /* PrevisionJournaliere.swift in Sources */,
 				D0934D1920B5939E008318FC /* AppDelegate.swift in Sources */,
 				D09A603720B6DB480049539B /* Prevision.swift in Sources */,
